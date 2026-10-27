@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CGPA Calculator</title>
+  <meta name="description" content="Nigeria 5.0 grading scale">
+
+  <!-- Fonts: swap for the pair you choose -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="card">
+    <section class="hero">
+      <div class="hero-text">
+          <h1>CGPA Calculator</h1>
+          <p>Nigerian 5.0 grading scale</p>
+      </div>
+
+    <hr class="top-line">
+
+    </section>
+    
+    <section class="grade">
+    <h2>This semester</h2>
+
+    <table>
+        <thead>
+            <tr>
+              <th>Course code</th>
+              <th>Units</th>
+              <th>Score(0-100)</th>
+              <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td><input type="text" value="GST 101"></td>
+              <td><input type="number" value="2"></td>
+              <td><input type="number" value="74"></td>
+              <td>A · 5</td>
+            </tr>
+
+            <tr>
+               <td><input type="text" value="MTH 101"></td>
+               <td><input type="number" value="3"></td>
+               <td><input type="number" value="68"></td>
+               <td>B · 4</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" value="PHY 101"></td>
+                <td><input type="number" value="3"></td>
+                <td><input type="number" value="120"></td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" value="CHM 101"></td>
+                <td><input type="number" value="3"></td>
+                <td><input type="number" value="71"></td>
+                <td>A . 5</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" value="CSC 101"></td>
+                <td><input type="number" value="4"></td>
+                <td><input type="number" value="63"></td>
+                <td>B . 4</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <hr class="top-line">
+     
+    <section class="records">
+      <h3>Previous record (optional)</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Previous CGPA</th>
+            <th>Previous total units</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+              <td><input type="number" value="3.98"></td>
+              <td><input type="number" value="72"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="record-1">Leave empty if this is your first semester</p>
+
+      <div class="buttons">
+       <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+       <button id="reset-btn" class="btn btn-secondary">Reset</button>
+      </div>
+    </section>
+
+
+    <div class="results">
+      <div class="stat">
+        <span class="stat-label">GPA</span>
+        <span class="stat-value">4.20</span>
+        <span class="stat-note">This semester · 15 units</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">CGPA</span>
+        <span class="stat-value">4.05</span>
+        <span class="stat-note">All semesters · 87 units</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Class of degree</span>
+        <span class="badge">Second Class Upper</span>
+        <span class="stat-note">CGPA 3.50 – 4.49</span>
+      </div>
+    </div>
+
+    <hr class="top-line">
+
+    <details open class="grading">
+      <summary>Grading scale</summary>
+
+      <table class="scale-table">
+        <thead>
+          <tr>
+            <th>Grade</th>
+            <th>Score</th>
+            <th>Point</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr><td>A</td><td>70–100</td><td>5</td></tr>
+           <tr><td>B</td><td>60–69</td><td>4</td></tr>
+           <tr><td>C</td><td>50–59</td><td>3</td></tr>
+           <tr><td>D</td><td>45–49</td><td>2</td></tr>
+           <tr><td>E</td><td>40–44</td><td>1</td></tr>
+           <tr><td>F</td><td>0–39</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </div>
+</body>
+</html>
